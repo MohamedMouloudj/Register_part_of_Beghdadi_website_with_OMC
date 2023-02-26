@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/Baghdadi_website.css" />
+    <link rel="shortcut icon" href="res/Jogol 1.png" />
+    <title>Rigister</title>
+  </head>
+  <body>
+    <div class="bigContainer">
+      <div class="smallcontainer">
+        <header>
+          <img src="res/Jogol 1.png" alt="logo" />
+          <a target="_self" href="">
+            <img src="res/telechargement-removebg-preview_1.png" />
+            <h3>Back to home</h3>
+          </a>
+        </header>
+        <form name="signupForm" action="/action.php" onsubmit="validateForm(event)">
+          <div class="container">
+            <div class="left">
+              <form action="">
+                <label for="FullName">Full name</label>
+                <input type="text" name="fullName" id="FullName" required />
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required/>
+
+                <label for="phone">Phone nmber</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required/>
+              
+            </div>
+
+            <div class="right">
+              <label for="discord">Your Discord id</label>
+              <input type="text" name="discord" id="discord" required />
+
+              <label>Are you an OMC member?</label>
+              <div class="yn">
+              <div class="dH3"><input type="radio" name="YES" id="Yeah" value="yes"><h3>Yes</h3></div>
+              <div class="dH3"><input type="radio" name="NO" id="nah" value="no" /><h3>No</h3></div>
+              </div>
+
+              <label for="study">Study Field</label>
+              <input type="text" name="study" id="study" />
+            </div>
+          </div>
+
+          <div class="container2">
+            <label for="desc">Motivation</label>
+            <textarea name="description" id="desc"></textarea>
+          </div>
+          <button id="btn" type="submit">SEND</button>
+         </form>
+      </div>
+      <aside>
+        <h1>AI  EVENT</h1>
+        <img src="res/Robot.png" alt="Robot"/>
+      </aside>
+    </div>
+  </body>
+</html>
